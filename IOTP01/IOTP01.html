@@ -17,6 +17,12 @@
     <!-- course constant file that contains semester, class, section pages -->
     <script src="../../ReadOnly/CourseConstants.js"></script>
 
+	<style type="text/css">
+		.auto-style1 {
+			width: 708px;
+		}
+	</style>
+
 </head>
 
 <body onload="setVariables()">
@@ -299,30 +305,19 @@
 
         <div id="Exercise04" class="collapse in  col-lg-12">
 
-            <p>Install Leafpad if it is not already installed.<br />
-               Install scrot (short for <strong>SCR</strong>een sh<strong>OT</strong>) to take screen shots that document your work, if it is not already installed.<br />
+            <p>Mousepad is the text editor.<br />
+                Scrot (short for <strong>SCR</strong>een sh<strong>OT</strong>) takes screen shots that document your work.<br />
             </p>
 
             <ol>
                 <li>On the Raspberry Pi open a terminal window.</li>
 
-                <li>In the Terminal window type <code>sudo apt-get install leafpad</code><br />
-                    Press Enter and the installation will begin.
-                </li>
-
-                <li>In the Terminal window type <code>sudo apt-get install scrot</code><br />
-                    Press Enter and the installation will begin.
-                </li>
-
-                <li>After scrot is installed, in the Terminal window type <code>scrot -h</code><br />
-                    This brings up information on how to use scrot.<br />
-                    Review this information.<br />
-                    <p>
-                        <a href="scrot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrot.PNG', 'popup'); return false;">
-                            <img src="scrot.PNG" width="300" alt="scrot help" class="img-responsive img-responsive" /></a>scrot help
+                <li>In the Terminal window type <code>scrot -h</code><br />This brings up information on how to use scrot.<br />Review this information.<br />
+					<p>
+						<a href="scrot.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('scrot.PNG', 'popup'); return false;">
+						<img src="scrot.PNG" width="300" alt="scrot help" class="img-responsive img-responsive" /></a>scrot help
                     </p>
-                    <br />
-
+					<br />
                 </li>
 
                 <li>Note that simply typing <code>scrot</code> in a Terminal window takes a screen shot and stores it in the   Raspberry Pi&#39;s&nbsp; &#39;/home/pi&#39; folder.<br />
@@ -332,7 +327,9 @@
                     </p>
                 </li>
 
-                <li>To open Leafpad, from the toolbar select Pi&gt;Accessories&gt;Text Editor (if there are two, select the lower one), and create a file that contains only your name in 72 point font.</li>
+                <li>Open Mousepad, from the toolbar select Pi&gt;Accessories&gt;Text Editor.</li>
+				<li>From the menu select Edit&gt;Preferences and uncheck the box &#39;Use system monospace font&#39; to allow the displayed font size to change.</li>
+				<li>&nbsp;Create a file that contains only your name in 72 point font, center it on the screen, and add white space as appropriate-see the image below.</li>
                 <li>In the terminal window type in 
                     <code>scrot -s</code> (scrot select)
                     then click and drag the mouse to select an area around your name in the text file.<br />
@@ -405,7 +402,7 @@
         <div class="col-lg-12 text-primary">
             (10) 2. Assignment submission<br />
             <!-- Enter your answer in the VALUE field below   GROK -->
-            <input class="form-control" name="q2" type="text" id="q2" value="I have completed all the exercises, and uploaded my screenshot to the D2L Assignment folder IOTP01.">
+            <input class="auto-style1" name="q2" type="text" id="q2" value="I have completed all the exercises, and uploaded my screenshot to the D2L Assignment folder IOTP01.">
             <hr />
         </div>
 
